@@ -12,7 +12,7 @@ ENV PORT=$DPORT
 
 RUN apk update \
     && apk add aria2 wget --no-cache \
-    && wget -qO- https://getcaddy.com | bash -s personal
+    && wget -qO- https://getcaddy.com | sh -s personal
 
 RUN mkdir -p /app/ariang \
     && version=1.1.3 \

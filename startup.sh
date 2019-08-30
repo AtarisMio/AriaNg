@@ -1,4 +1,4 @@
-#! /bin/bash -eu
+#! /bin/sh -eu
 
 # aria2 startup
 if [ "$ARIA2_SSL" = "true" ]; then
