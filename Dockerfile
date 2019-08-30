@@ -11,8 +11,8 @@ ENV ARIA2_SSL=false
 ENV PORT=$DPORT
 
 RUN apk update \
-    && apk add aria2 wget --no-cache \
-    && wget -qO- https://getcaddy.com | sh -s personal
+    && apk add bash aria2 wget --no-cache \
+    && wget -qO- https://getcaddy.com | bash -s personal
 
 RUN mkdir -p /app/ariang \
     && version=1.1.3 \
