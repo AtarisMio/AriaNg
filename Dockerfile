@@ -26,6 +26,7 @@ ADD ./Caddyfile /app/caddy/
 ADD ./conf /app/aria2/conf
 
 VOLUME /app/aria2/conf
+VOLUME /data
 
 EXPOSE 6800 $DPORT
 
