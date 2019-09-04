@@ -10,7 +10,7 @@ ENV RPC_SECRET=""
 ENV ARIA2_SSL=false
 ENV PORT=$DPORT
 
-RUN echo "http://mirrors.aliyun.com/alpine/" >> /etc/apk/repositories
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 
 RUN apk update --no-cache \
     && apk add bash aria2 wget --no-cache \
