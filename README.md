@@ -1,2 +1,0 @@
-# AriaNg
-AriaNg + Aria2
