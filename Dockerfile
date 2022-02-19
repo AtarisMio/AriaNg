@@ -6,7 +6,7 @@ ADD https://github.com/mayswind/AriaNg/releases/download/${VERSION}/AriaNg-${VER
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install unzip && \
     mkdir -p /tmp/aria-ng && \
-    unzip /tmp/AriaNg-${VERSION}.zip -d /tmp/aria-ng && \
+    unzip /tmp/AriaNg-${VERSION}-AllInOne.zip -d /tmp/aria-ng && \
     echo 'done'
 
 FROM nginx:alpine
